@@ -2,9 +2,13 @@
   "name": "gymfinity",
   "version": "1.0.0",
   "description": "Gym app",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon backend/server.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"kill-port 5000\" \"kill-port 5173\" \"npm run server\" \"npm run client\""
   },
   "repository": {
     "type": "git",
@@ -15,5 +19,13 @@
   "bugs": {
     "url": "https://github.com/Mackowi/gymfinity/issues"
   },
-  "homepage": "https://github.com/Mackowi/gymfinity#readme"
+  "homepage": "https://github.com/Mackowi/gymfinity#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "concurrently": "^8.2.2",
+    "express": "^4.18.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30"
+  }
 }
