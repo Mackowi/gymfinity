@@ -6,7 +6,7 @@ function Navbar() {
   return (
     <div className='fixed top-0 z-10 bg-white w-full px-8 py-6'>
       <div className='text-black flex justify-between items-center relative'>
-        <span className='font-logo text-3xl'>GYMFINITY</span>
+        <h1 className='font-logo text-3xl'>GYMFINITY</h1>
         <div className='hidden lg:flex items-center lg:space-x-8 font-bold '>
           <div className='navLink'>MEMBERSHIPS</div>
           <div className='navLink'>CLUBS</div>

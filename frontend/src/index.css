@@ -2,13 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+/* @layer base {
+  body {
+    @apply bg-black
+  }
+} */
+
 .navLink {
   text-decoration-thickness: 2px;
   @apply cursor-pointer hover:underline hover:underline-offset-8 
 }
 
 .heroBtn {
-  @apply border-2 px-8 py-3 rounded-lg hover:bg-white hover:text-black hover:shadow-white/[.30] hover:shadow-xl hover:scale-110 transition duration-200
+  @apply border-2 px-8 py-3 rounded-lg hover:bg-white hover:text-black hover:shadow-white/[.15] hover:shadow-xl hover:scale-110 transition duration-200
+}
+
+.footerLink {
+  @apply hover:pl-3 transition-all duration-200 font-bold
+}
+
+.footerSocial {
+  @apply hover:scale-125 transition duration-200
 }
 
 

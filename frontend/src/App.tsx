@@ -1,3 +1,4 @@
+import Footer from './components/Footer'
 import Hero from './components/Hero'
 import Navbar from './components/Navbar'
 
@@ -6,7 +7,7 @@ function App() {
     <>
       <Navbar />
       <Hero />
-      <div className='test'>
+      <div className='test  container mx-auto p-8'>
         <h1>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, a?
           Libero obcaecati dolorum deleniti, harum non corrupti quo fugit
@@ -24,6 +25,7 @@ function App() {
           rem, culpa incidunt magnam mollitia sapiente nostrum.
         </h1>
       </div>
+      <Footer />
     </>
   )
 }
