@@ -2,23 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @layer base {
-  body {
-    @apply bg-black
-  }
-} */
-
 .navLink {
   text-decoration-thickness: 2px;
   @apply cursor-pointer hover:underline hover:underline-offset-8 
 }
 
 .heroBtn {
-  @apply border-2 px-8 py-3 rounded-lg hover:bg-white hover:text-black hover:shadow-white/[.15] hover:shadow-xl hover:scale-110 transition duration-200
+  @apply border-2 px-6 lg:px-16 py-3 rounded-lg hover:bg-white hover:text-black hover:shadow-white/[.15] hover:shadow-xl hover:scale-110 transition duration-200
+}
+
+.btn {
+  @apply border-2 px-8 border-black rounded-lg  hover:bg-black hover:text-white hover:shadow-2xl transition duration-300 hover:scale-110
+}
+
+.accentBtn {
+  @apply border-2 py-3 px-8 rounded-lg bg-reddish border-reddish hover:shadow-xl hover:scale-110 transition duration-200 hover:shadow-white/[.15]
 }
 
 .footerLink {
   @apply hover:pl-3 transition-all duration-200 font-bold
+}
+
+.locationsLink {
+  @apply hover:pl-6 transition-all duration-200
 }
 
 .footerSocial {
@@ -68,3 +74,43 @@
 .open .hamburger-bottom {
   transform: rotate(-45deg) translateY(6px) translateX(-6px);
 }
+
+
+.imgText {
+  @apply absolute lg:text-lg px-6 bottom-4 text-white font-bold tracking-widest group-hover:scale-110 duration-300
+}
+
+.imgOverlay {
+  @apply absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-black/50 group-hover:scale-110 rounded-lg
+}
+
+.imgContainer {
+  @apply w-full lg:w-1/3 relative cursor-pointer hover:shadow-2xl hover:shadow-black
+}
+
+.animation-slide {
+  animation: slideRightToLeft 20s linear infinite;
+}
+
+.animation-slide-brandname {
+  animation: slideRightToLeftFull 20s linear infinite;
+}
+
+@keyframes slideRightToLeft {
+  0% {
+    transform: translateX(5%);
+  }
+  100% {
+    transform: translateX(-75%);
+  }
+}
+
+@keyframes slideRightToLeftFull {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+

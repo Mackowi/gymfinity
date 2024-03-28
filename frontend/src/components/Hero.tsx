@@ -15,7 +15,7 @@ function Hero() {
           Your browser does not support the video tag.
         </video>
         <div className='bg-black/[.30] absolute inset-0 text-white font-bold flex flex-col justify-center items-center px-8 z-2'>
-          <h1 className='text-4xl md:text-5xl tracking-wider'>
+          <h1 className='text-4xl md:text-5xl tracking-wider text-center'>
             GET UP TO 25% OFF
           </h1>
           <div className='text-xl text-center flex flex-col md:flex-row space-x-2 mt-4'>

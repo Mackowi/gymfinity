@@ -1,13 +1,23 @@
 import Footer from './components/Footer'
 import Hero from './components/Hero'
 import Navbar from './components/Navbar'
+import Promotion from './components/Promotion'
+import Locations from './components/Locations'
+import ImageBoxes from './components/ImageBoxes'
+import ImageSection from './components/ImageSection'
+import TwoImages from './components/TwoImages'
 
 function App() {
   return (
     <>
       <Navbar />
       <Hero />
-      <div className='test  container mx-auto p-8'>
+      <Promotion />
+      <Locations />
+      <ImageBoxes />
+      <ImageSection />
+      <TwoImages />
+      {/* <div className='container mx-auto p-8'>
         <h1>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, a?
           Libero obcaecati dolorum deleniti, harum non corrupti quo fugit
@@ -24,7 +34,7 @@ function App() {
           pariatur quidem voluptas libero nemo beatae dolor inventore, possimus
           rem, culpa incidunt magnam mollitia sapiente nostrum.
         </h1>
-      </div>
+      </div> */}
       <Footer />
     </>
   )

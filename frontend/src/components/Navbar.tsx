@@ -4,7 +4,7 @@ function Navbar() {
   const [open, setOpen] = useState(false)
 
   return (
-    <div className='fixed top-0 z-10 bg-white w-full px-8 py-6'>
+    <div className='fixed top-0 z-30 bg-white w-full px-8 py-6'>
       <div className='text-black flex justify-between items-center relative'>
         <h1 className='font-logo text-3xl'>GYMFINITY</h1>
         <div className='hidden lg:flex items-center lg:space-x-8 font-bold '>
@@ -12,9 +12,7 @@ function Navbar() {
           <div className='navLink'>CLUBS</div>
           <div className='navLink'>PERSONAL TRAINING</div>
           <div className='navLink'>FREE TRIAL</div>
-          <button className='border-2 border-black rounded-lg px-8 py-2 hover:bg-black hover:text-white hover:shadow-2xl transition duration-300 ease hover:scale-110'>
-            JOIN NOW
-          </button>
+          <button className='btn py-2'>JOIN NOW</button>
         </div>
         <button
           id='menu-btn'
@@ -26,9 +24,9 @@ function Navbar() {
             document.body.classList.toggle('overflow-hidden')
           }}
         >
-          <span className='hamburger-top z-30'></span>
-          <span className='hamburger-middle z-30'></span>
-          <span className='hamburger-bottom z-30'></span>
+          <span className='hamburger-top z-40'></span>
+          <span className='hamburger-middle z-40'></span>
+          <span className='hamburger-bottom z-40'></span>
         </button>
       </div>
       <div className={`${open ? 'block' : 'hidden'} fixed inset-0 bg-white`}>

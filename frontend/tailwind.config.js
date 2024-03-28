@@ -12,7 +12,14 @@ export default {
       lg: '1020px',
       xl: '1440px',
     },
-    extend: {},
+    extend: {
+      colors: {
+        reddish: '#ec3648',
+      },
+      fontSize: {
+        '10xl': '10rem',
+      },
+    },
   },
   plugins: [],
 }
